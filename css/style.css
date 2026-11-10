@@ -2076,3 +2076,52 @@ iframe {
     }
 }
 
+/* ========================================
+   MOBİL AVUKAT TANITIMI - ORTALAMA
+======================================== */
+
+@media (max-width: 600px) {
+
+    /* Fotoğrafı ortala */
+    .lawyer-image-wrapper {
+        margin: 0 auto;
+    }
+
+    /* Tüm yazıları ortala */
+    .lawyer-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+
+    /* Hakkımda başlığı */
+    .lawyer-content .section-label {
+        text-align: center;
+    }
+
+    /* Avukat adı */
+    .lawyer-content h2 {
+        text-align: center;
+        font-size: clamp(29px, 7vw, 37px);
+    }
+
+    /* Altın çizgiyi ortala */
+    .lawyer-divider {
+        margin: 22px auto 30px;
+    }
+
+    /* Açıklamaları ortala */
+    .lawyer-content p {
+        text-align: center;
+        font-size: 15px;
+        line-height: 1.8;
+    }
+
+    /* Butonu ortala */
+    .lawyer-content .second-btn {
+        margin: 15px auto 0;
+    }
+}
+
