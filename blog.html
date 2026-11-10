@@ -1,0 +1,202 @@
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Blog | ASYA Hukuk & Danışmanlık</title>
+
+    <meta name="description"
+          content="ASYA Hukuk & Danışmanlık tarafından hazırlanan hukuki bilgilendirme yazıları.">
+
+    <link rel="icon" href="assest/logo.png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- ÜST MENÜ -->
+    <header class="header">
+        <div class="container header-container">
+
+            <a href="index.html" class="logo-area">
+
+                <img src="assest/logo.png"
+                     alt="ASYA Hukuk Logosu"
+                     class="site-logo">
+
+                <div class="logo-text">
+                    <span class="logo-title">ASYA</span>
+                    <span class="logo-subtitle">
+                        HUKUK & DANIŞMANLIK
+                    </span>
+                </div>
+
+            </a>
+
+            <nav class="navbar"
+                 id="navbar"
+                 aria-label="Ana menü">
+
+                <a href="index.html">Anasayfa</a>
+                <a href="hakkimizda.html">Hakkımızda</a>
+                <a href="index.html#calisma-alanlari">
+                    Çalışma Alanları
+                </a>
+                <a href="blog.html">Blog</a>
+                <a href="sss.html">Sıkça Sorulan Sorular</a>
+                <a href="index.html#iletisim">İletişim</a>
+
+            </nav>
+
+            <button class="menu-btn"
+                    type="button"
+                    aria-label="Menüyü aç veya kapat"
+                    aria-expanded="false"
+                    aria-controls="navbar">
+                ☰
+            </button>
+
+        </div>
+    </header>
+
+    <main>
+
+        <!-- BLOG BAŞLIĞI -->
+
+        <section class="blog-page-hero">
+
+            <div class="container">
+
+                <span class="section-label">
+                    HUKUKİ BİLGİLER
+                </span>
+
+                <h1>Blog Yazıları</h1>
+
+                <p>
+                    Günlük hayatta karşılaşılan
+                    hukuki konular hakkında
+                    bilgilendirici içerikler.
+                </p>
+
+            </div>
+
+        </section>
+
+        <!-- BLOG İÇERİKLERİ -->
+
+        <section class="blog-list-section">
+
+            <div class="container">
+
+                <!-- ARAMA VE FİLTRE -->
+
+                <div class="blog-controls">
+
+                    <input
+                        type="search"
+                        id="blogSearch"
+                        placeholder="Hukuki bir konu arayın..."
+                        aria-label="Blog yazılarında ara">
+
+                    <select id="blogCategory"
+                            aria-label="Hukuk kategorisi seç">
+
+                        <option value="all">
+                            Tüm Kategoriler
+                        </option>
+
+                    </select>
+
+                </div>
+
+                <!-- BLOG KARTLARI -->
+
+                <div class="blog-page-grid"
+                     id="blogPageGrid">
+                </div>
+
+                <p id="blogEmpty"
+                   class="blog-empty"
+                   hidden>
+                    Aramanıza uygun yazı bulunamadı.
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+
+        <div class="container footer-container">
+
+            <div class="footer-brand">
+
+                <img src="assest/logo.png"
+                     alt="ASYA Hukuk Logosu"
+                     class="footer-logo">
+
+                <h3>ASYA Hukuk & Danışmanlık</h3>
+
+                <p>Av. Asya Gülçin Korkan</p>
+
+            </div>
+
+            <div class="footer-links">
+
+                <h4>Hızlı Bağlantılar</h4>
+
+                <a href="index.html">Anasayfa</a>
+                <a href="hakkimizda.html">Hakkımızda</a>
+                <a href="index.html#calisma-alanlari">
+                    Çalışma Alanları
+                </a>
+                <a href="blog.html">Blog</a>
+                <a href="index.html#iletisim">
+                    İletişim
+                </a>
+
+            </div>
+
+            <div class="footer-contact">
+
+                <h4>İletişim</h4>
+
+                <a href="tel:+905534928310">
+                    0553 492 83 10
+                </a>
+
+                <a href="mailto:asyagulcin.av@gmail.com">
+                    asyagulcin.av@gmail.com
+                </a>
+
+                <p>Kavaklıdere, Çankaya / Ankara</p>
+
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 ASYA Hukuk & Danışmanlık.
+                Tüm hakları saklıdır.
+            </p>
+
+        </div>
+
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/bloklar.js"></script>
+    <script src="js/blog.js"></script>
+
+</body>
+</html>
