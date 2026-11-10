@@ -19,32 +19,21 @@ if (secilenYazi) {
 
     baslikAlani.textContent = secilenYazi.title;
 
-    // Yazıyı boş satırlardan paragraflara ayır
-    const bolumler = secilenYazi.content
+    // Tüm içerikleri aynı paragraf biçiminde göster
+    const paragraflar = secilenYazi.content
         .trim()
         .split(/\n\s*\n/);
 
-    bolumler.forEach(function(bolum, index) {
+    paragraflar.forEach(function(paragraf) {
 
-        const metin = bolum.trim();
+        const metin = paragraf.trim();
 
         if (!metin) return;
 
-        // İlk bölüm giriş paragrafıdır.
-        // Kısa ve noktayla bitmeyen sonraki
-        // bölümler alt başlık kabul edilir.
-        const altBaslik =
-            index > 0 &&
-            metin.length < 120 &&
-            !/[.!?…]$/.test(metin);
+        const p = document.createElement("p");
+        p.textContent = metin;
 
-        const element = document.createElement(
-            altBaslik ? "h2" : "p"
-        );
-
-        element.textContent = metin;
-
-        icerikAlani.appendChild(element);
+        icerikAlani.appendChild(p);
     });
 
 } else {
@@ -52,8 +41,7 @@ if (secilenYazi) {
     baslikAlani.textContent = "Yazı Bulunamadı";
 
     const mesaj = document.createElement("p");
-    mesaj.textContent =
-        "Aradığınız blog yazısı bulunamadı.";
+    mesaj.textContent = "Aradığınız blog yazısı bulunamadı.";
 
     icerikAlani.appendChild(mesaj);
 }
