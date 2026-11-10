@@ -2125,3 +2125,32 @@ iframe {
     }
 }
 
+@media (max-width: 600px) {
+
+    .footer-brand,
+    .lawyer-content {
+        text-align: center !important;
+        align-items: center !important;
+    }
+
+    .lawyer-content {
+        display: flex !important;
+        flex-direction: column !important;
+    }
+
+    .lawyer-content h2,
+    .lawyer-content p,
+    .lawyer-content .section-label {
+        text-align: center !important;
+    }
+
+    .lawyer-divider {
+        margin: 22px auto 30px !important;
+    }
+
+    .lawyer-content .second-btn {
+        margin: 15px auto 0 !important;
+    }
+}
+
+
