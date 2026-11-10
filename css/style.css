@@ -2930,3 +2930,13 @@ iframe {
 }
 
 
+/* MOBİLDE GOOGLE MAPS HARİTASINI GİZLE */
+
+@media (max-width: 600px) {
+
+    .contact-map-box iframe {
+        display: none !important;
+    }
+
+}
+
