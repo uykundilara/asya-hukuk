@@ -1,0 +1,2078 @@
+
+/* ========================================
+   ASYA HUKUK & DANIŞMANLIK
+   ANA TASARIM DOSYASI
+======================================== */
+
+/* GENEL AYARLAR */
+
+:root {
+    --navy: #111f38;
+    --dark-navy: #0a1426;
+    --gold: #c6a15b;
+    --white: #ffffff;
+    --cream: #f5f2ec;
+    --text: #30343b;
+    --muted: #687080;
+    --border: #e8e4dc;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 90px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--text);
+    line-height: 1.7;
+    background: var(--white);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    font: inherit;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+section {
+    padding: 95px 0;
+}
+
+section h2 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(30px, 3vw, 44px);
+    line-height: 1.25;
+}
+
+.section-label {
+    display: inline-block;
+    color: var(--gold);
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin-bottom: 18px;
+}
+
+.section-heading {
+    max-width: 700px;
+    margin: 0 auto 55px;
+    text-align: center;
+}
+
+.section-heading h2 {
+    margin-bottom: 18px;
+}
+
+.section-heading p {
+    color: var(--muted);
+    font-size: 17px;
+}
+
+.section-button {
+    text-align: center;
+    margin-top: 35px;
+}
+
+/* ========================================
+   ÜST MENÜ
+======================================== */
+
+.header {
+    height: 90px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: var(--white);
+    border-bottom: 1px solid var(--border);
+    box-shadow: 0 3px 18px rgba(0, 0, 0, 0.04);
+}
+
+.header-container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-shrink: 0;
+}
+
+.site-logo {
+    width: 65px;
+    height: 65px;
+    object-fit: contain;
+}
+
+.logo-text {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.2;
+}
+
+.logo-title {
+    font-family: Georgia, serif;
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: var(--navy);
+}
+
+.logo-subtitle {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1.6px;
+    color: var(--gold);
+    white-space: nowrap;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+}
+
+.navbar a {
+    color: var(--navy);
+    font-size: 14px;
+    font-weight: 600;
+    white-space: nowrap;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: var(--gold);
+}
+
+.menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    color: var(--navy);
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/* ========================================
+   BUTONLAR
+======================================== */
+
+.main-btn,
+.second-btn,
+.outline-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 13px 27px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 700;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.main-btn {
+    background: var(--gold);
+    color: var(--dark-navy);
+}
+
+.main-btn:hover {
+    background: #d9b875;
+    transform: translateY(-2px);
+}
+
+.second-btn {
+    background: var(--navy);
+    color: var(--white);
+}
+
+.second-btn:hover {
+    background: var(--gold);
+    color: var(--dark-navy);
+}
+
+.outline-btn {
+    border: 1px solid var(--gold);
+    color: var(--gold);
+    background: transparent;
+}
+
+.outline-btn:hover {
+    background: var(--gold);
+    color: var(--dark-navy);
+}
+
+/* ========================================
+   1. ANA SAYFA
+======================================== */
+
+
+/* ANA SAYFA ARKA PLAN GÖRSELİ */
+
+
+/* ANA SAYFA - HUKUK ARKA PLANI */
+
+.hero {
+    min-height: 650px;
+    display: flex;
+    align-items: center;
+
+    background-color: #0a1426;
+
+    background-image:
+        linear-gradient(
+            90deg,
+            rgba(10, 20, 38, 0.55) 0%,
+            rgba(10, 20, 38, 0.15) 55%,
+            rgba(10, 20, 38, 0) 100%
+        ),
+        url("../assest/hukuk-arka-plan.png");
+
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    color: #ffffff;
+}
+
+
+
+.hero-container {
+    width: 90%;
+}
+
+.hero-content {
+    max-width: 850px;
+}
+
+.hero-label {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 14px;
+    letter-spacing: 2px;
+    color: var(--gold);
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.hero-line {
+    height: 2px;
+    width: 45px;
+    background: var(--gold);
+}
+
+.hero h1 {
+    font-family: Georgia, serif;
+    font-size: clamp(40px, 5.5vw, 72px);
+    line-height: 1.16;
+    font-weight: 500;
+    margin-bottom: 28px;
+}
+
+.hero h1 span {
+    color: var(--gold);
+    display: block;
+}
+
+.hero-description {
+    max-width: 610px;
+    color: #e1e5eb;
+    font-size: 18px;
+    margin-bottom: 36px;
+}
+
+.hero-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+/* ========================================
+   2. HAKKIMIZDA
+======================================== */
+
+.about-section {
+    background: var(--white);
+}
+
+.about-container {
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+    align-items: center;
+    gap: 75px;
+}
+
+.about-content h2 {
+    margin-bottom: 28px;
+    color: var(--navy);
+}
+
+.about-content p {
+    margin-bottom: 20px;
+    color: var(--muted);
+    font-size: 17px;
+}
+
+.about-content .second-btn {
+    margin-top: 12px;
+}
+
+.about-highlight {
+    background: var(--cream);
+    border: 1px solid var(--border);
+    min-height: 410px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    position: relative;
+}
+
+.about-highlight::before {
+    content: "";
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    top: 18px;
+    left: 18px;
+    border-top: 2px solid var(--gold);
+    border-left: 2px solid var(--gold);
+}
+
+.about-highlight::after {
+    content: "";
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    right: 18px;
+    bottom: 18px;
+    border-right: 2px solid var(--gold);
+    border-bottom: 2px solid var(--gold);
+}
+
+.about-logo {
+    width: 190px;
+    height: 190px;
+    object-fit: contain;
+    margin-bottom: 25px;
+}
+
+.about-highlight h3 {
+    font-family: Georgia, serif;
+    font-size: 27px;
+    color: var(--navy);
+    letter-spacing: 3px;
+    text-align: center;
+}
+
+.about-highlight p {
+    color: var(--gold);
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+/* ========================================
+   3. ÇALIŞMA ALANLARI
+======================================== */
+
+.practice-section {
+    background: var(--navy);
+    color: var(--white);
+}
+
+.practice-section .section-heading p {
+    color: #ccd3df;
+}
+
+.practice-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+}
+
+.practice-card {
+    min-height: 255px;
+    padding: 32px;
+    background: rgba(255, 255, 255, 0.055);
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s;
+}
+
+.practice-card:hover {
+    background: var(--white);
+    transform: translateY(-5px);
+    border-color: var(--gold);
+}
+
+.practice-number {
+    color: var(--gold);
+    font-family: Georgia, serif;
+    font-size: 21px;
+    margin-bottom: 20px;
+}
+
+.practice-card h3 {
+    font-family: Georgia, serif;
+    font-size: 23px;
+    font-weight: 500;
+    line-height: 1.3;
+    margin-bottom: 14px;
+}
+
+.practice-card p {
+    font-size: 14px;
+    color: #ccd3df;
+    margin-bottom: 15px;
+}
+
+.card-arrow {
+    color: var(--gold);
+    font-size: 25px;
+    margin-top: auto;
+    align-self: flex-end;
+}
+
+.practice-card:hover h3 {
+    color: var(--navy);
+}
+
+.practice-card:hover p {
+    color: var(--muted);
+}
+
+/* ========================================
+   4. AVUKAT TANITIMI
+======================================== */
+
+.lawyer-section {
+    background: var(--cream);
+}
+
+.lawyer-container {
+    display: grid;
+    grid-template-columns: 1fr 1.15fr;
+    align-items: center;
+    gap: 75px;
+}
+
+.lawyer-image {
+    min-height: 440px;
+    background: #e5dfd4;
+    overflow: hidden;
+}
+
+.lawyer-image img {
+    width: 100%;
+    height: 100%;
+    min-height: 440px;
+    max-height: 590px;
+    object-fit: cover;
+}
+
+.lawyer-content h2 {
+    color: var(--navy);
+    margin-bottom: 12px;
+}
+
+.lawyer-position {
+    font-family: Georgia, serif;
+    color: var(--gold) !important;
+    font-size: 20px !important;
+    margin-bottom: 25px;
+}
+
+.lawyer-content p {
+    font-size: 17px;
+    color: var(--muted);
+    margin-bottom: 20px;
+}
+
+.lawyer-content .second-btn {
+    margin-top: 12px;
+}
+
+/* ========================================
+   5. BLOG
+======================================== */
+
+.blog-section {
+    background: var(--white);
+}
+
+.blog-preview-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 25px;
+}
+
+.blog-card {
+    background: var(--white);
+    border: 1px solid var(--border);
+    padding: 32px;
+    transition: all 0.3s;
+}
+
+.blog-card:hover {
+    box-shadow: 0 15px 35px rgba(17, 31, 56, 0.1);
+    transform: translateY(-5px);
+}
+
+.blog-category {
+    color: var(--gold);
+    letter-spacing: 2px;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.blog-card h3 {
+    color: var(--navy);
+    font-family: Georgia, serif;
+    font-size: 23px;
+    line-height: 1.4;
+    margin: 20px 0;
+}
+
+.blog-card p {
+    color: var(--muted);
+    font-size: 15px;
+    margin-bottom: 25px;
+}
+
+.blog-card a {
+    color: var(--navy);
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.blog-card a:hover {
+    color: var(--gold);
+}
+
+/* ========================================
+   6. SIKÇA SORULAN SORULAR
+======================================== */
+
+.faq-section {
+    background: var(--cream);
+}
+
+.faq-list {
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.faq-item {
+    background: var(--white);
+    border: 1px solid var(--border);
+    margin-bottom: 15px;
+    padding: 22px 28px;
+}
+
+.faq-item summary {
+    color: var(--navy);
+    font-weight: 700;
+    font-size: 17px;
+    cursor: pointer;
+    padding-right: 15px;
+}
+
+.faq-item[open] {
+    border-color: var(--gold);
+}
+
+.faq-item p {
+    margin-top: 18px;
+    color: var(--muted);
+    font-size: 15px;
+}
+
+/* ========================================
+   7. İLETİŞİM
+======================================== */
+
+.contact-section {
+    background: var(--navy);
+    color: var(--white);
+}
+
+.contact-section .section-heading p {
+    color: #d3d9e2;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 45px;
+}
+
+.contact-info,
+.contact-form-info {
+    padding: 40px;
+    border: 1px solid rgba(255, 255, 255, 0.17);
+    background: rgba(255, 255, 255, 0.045);
+}
+
+.contact-info h3,
+.contact-form-info h3 {
+    font-family: Georgia, serif;
+    font-size: 25px;
+    margin-bottom: 25px;
+    color: var(--white);
+}
+
+.contact-item {
+    margin-bottom: 25px;
+}
+
+.contact-item h4 {
+    font-size: 13px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 6px;
+}
+
+.contact-item p,
+.contact-item a,
+.contact-form-info p {
+    color: #d7deea;
+    font-size: 16px;
+}
+
+.contact-item a:hover {
+    color: var(--gold);
+}
+
+.contact-form-info p {
+    margin-bottom: 28px;
+}
+
+.contact-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.whatsapp-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 13px 22px;
+    background: #237d51;
+    color: var(--white);
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 700;
+    transition: background 0.3s;
+}
+
+.whatsapp-btn:hover {
+    background: #19623f;
+}
+
+/* ========================================
+   FOOTER
+======================================== */
+
+.footer {
+    background: var(--dark-navy);
+    color: var(--white);
+    padding-top: 65px;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr 1fr;
+    gap: 55px;
+    padding-bottom: 55px;
+}
+
+.footer-logo {
+    width: 85px;
+    height: 85px;
+    object-fit: contain;
+    margin-bottom: 15px;
+    background: var(--cream);
+    padding: 8px;
+    border-radius: 4px;
+}
+
+.footer-brand h3 {
+    font-family: Georgia, serif;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.footer-brand p {
+    color: #bfc8d6;
+}
+
+.footer-links,
+.footer-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.footer-links h4,
+.footer-contact h4 {
+    font-size: 17px;
+    color: var(--gold);
+    margin-bottom: 10px;
+}
+
+.footer-links a,
+.footer-contact a,
+.footer-contact p {
+    font-size: 14px;
+    color: #bfc8d6;
+}
+
+.footer-links a:hover,
+.footer-contact a:hover {
+    color: var(--gold);
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 22px;
+    text-align: center;
+    font-size: 13px;
+    color: #bfc8d6;
+}
+
+/* ========================================
+   MOBİL VE TABLET TASARIMI
+======================================== */
+
+@media (max-width: 1100px) {
+
+    .navbar {
+        gap: 12px;
+    }
+
+    .navbar a {
+        font-size: 12px;
+    }
+
+    .about-container,
+    .lawyer-container {
+        gap: 40px;
+    }
+}
+
+@media (max-width: 900px) {
+
+    .header {
+        height: 80px;
+    }
+
+    .site-logo {
+        width: 55px;
+        height: 55px;
+    }
+
+    .logo-title {
+        font-size: 24px;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+
+    .navbar {
+        display: none;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        background: var(--white);
+        padding: 25px 5%;
+        box-shadow: 0 12px 18px rgba(0, 0, 0, 0.1);
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 18px;
+    }
+
+    .navbar.active {
+        display: flex;
+    }
+
+    .navbar a {
+        font-size: 15px;
+    }
+
+    .about-container,
+    .lawyer-container,
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .practice-grid,
+    .blog-preview-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .footer-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+
+    section {
+        padding: 65px 0;
+    }
+
+    .header {
+        height: 75px;
+    }
+
+    .navbar {
+        top: 75px;
+    }
+
+    .logo-area {
+        gap: 8px;
+    }
+
+    .site-logo {
+        width: 48px;
+        height: 48px;
+    }
+
+    .logo-title {
+        font-size: 22px;
+    }
+
+    .logo-subtitle {
+        font-size: 8px;
+        letter-spacing: 1px;
+    }
+
+    .hero {
+        min-height: 570px;
+    }
+
+    .hero h1 {
+        font-size: 39px;
+    }
+
+    .hero-description {
+        font-size: 16px;
+    }
+
+    .hero-label {
+        font-size: 11px;
+        letter-spacing: 1px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .about-highlight {
+        min-height: 320px;
+    }
+
+    .about-logo {
+        width: 150px;
+        height: 150px;
+    }
+
+    .practice-grid,
+    .blog-preview-grid,
+    .footer-container {
+        grid-template-columns: 1fr;
+    }
+
+    .practice-card {
+        min-height: 225px;
+    }
+
+    .contact-info,
+    .contact-form-info {
+        padding: 25px;
+    }
+
+    .contact-buttons {
+        flex-direction: column;
+    }
+
+    .contact-buttons a {
+        width: 100%;
+    }
+
+    .footer-container {
+        gap: 35px;
+    }
+}
+
+/* KLAVYE ERİŞİLEBİLİRLİĞİ */
+
+a:focus-visible,
+button:focus-visible,
+summary:focus-visible {
+    outline: 3px solid var(--gold);
+    outline-offset: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        transition-duration: 0.01ms !important;
+        animation-duration: 0.01ms !important;
+    }
+}
+
+/* HAKKIMIZDA BAŞLIK TASARIMI */
+
+.about-title {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(30px, 3.5vw, 48px);
+    font-weight: 700;
+    line-height: 1.2;
+    color: var(--navy);
+}
+
+.about-title span {
+    display: block;
+}
+
+/* ANA SAYFA BUTON YAZI TİPLERİ */
+
+.hero-buttons .main-btn,
+.hero-buttons .outline-btn {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0;
+}
+
+
+/* ANA SAYFA BUTONLARINI EŞİTLE */
+
+.hero-buttons .main-btn,
+.hero-buttons .outline-btn {
+    background: transparent;
+    color: #c6a15b;
+    border: 1px solid #c6a15b;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+
+    border-radius: 4px;
+    padding: 13px 27px;
+
+    transition: all 0.3s ease;
+}
+
+/* ÜZERİNE GELİNCE */
+
+.hero-buttons .main-btn:hover,
+.hero-buttons .outline-btn:hover {
+    background: #c6a15b;
+    color: #111f38;
+}
+
+/* ========================================
+   AVUKAT TANITIMI - YENİ TASARIM
+======================================== */
+
+.lawyer-image-wrapper {
+    position: relative;
+    padding: 16px;
+    max-width: 520px;
+}
+
+/* ARKADAKİ ALTIN ÇERÇEVE */
+
+.lawyer-image-wrapper::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 32px;
+    bottom: 32px;
+    border: 2px solid #c6a15b;
+    z-index: 0;
+}
+
+/* FOTOĞRAF ALANI */
+
+.lawyer-image-wrapper .lawyer-image {
+    position: relative;
+    z-index: 1;
+    min-height: 0;
+    width: 100%;
+    overflow: hidden;
+    border: 5px solid #ffffff;
+    box-shadow: 15px 15px 0 rgba(17, 31, 56, 0.12);
+}
+
+.lawyer-image-wrapper .lawyer-image img {
+    width: 100%;
+    height: auto;
+    min-height: 0;
+    max-height: none;
+    display: block;
+    object-fit: cover;
+}
+
+/* İSMİN ALTINDAKİ ALTIN ÇİZGİ */
+
+.lawyer-divider {
+    width: 75px;
+    height: 3px;
+    background: #c6a15b;
+    margin: 22px 0 30px;
+}
+
+/* METİN AYARLARI */
+
+.lawyer-content h2 {
+    font-family: Georgia, "Times New Roman", serif;
+    color: #111f38;
+    font-size: clamp(32px, 3vw, 46px);
+    line-height: 1.2;
+    margin-bottom: 0;
+}
+
+.lawyer-content .section-label {
+    margin-bottom: 20px;
+}
+
+@media (max-width: 600px) {
+
+    .lawyer-image-wrapper {
+        max-width: 420px;
+        padding: 12px;
+    }
+
+    .lawyer-content h2 {
+        font-size: 34px;
+    }
+
+}
+
+
+/* ========================================
+   GENEL BOYUT DÜZENLEMESİ
+======================================== */
+
+@media (min-width: 901px) {
+
+    /* İçerik genişliği */
+    .container {
+        max-width: 1150px;
+    }
+
+    /* Bölümler arası boşluk */
+    section {
+        padding-top: 75px;
+        padding-bottom: 75px;
+    }
+
+    /* Ana sayfa yüksekliği */
+    .hero {
+        min-height: 580px;
+    }
+
+    /* Ana başlık */
+    .hero h1 {
+        font-size: clamp(42px, 4.5vw, 62px);
+    }
+
+    /* Bölüm başlıkları */
+    section h2 {
+        font-size: 38px;
+    }
+
+    /* Hakkımızda özel başlık */
+    .about-title {
+        font-size: 42px;
+    }
+
+    /* Normal açıklama yazıları */
+    .about-content p,
+    .lawyer-content p {
+        font-size: 16px;
+    }
+
+    /* Avukat fotoğrafı */
+    .lawyer-image-wrapper {
+        max-width: 440px;
+    }
+
+    /* Çalışma alanları kartları */
+    .practice-card {
+        min-height: 230px;
+        padding: 26px;
+    }
+
+    .practice-card h3 {
+        font-size: 21px;
+    }
+
+    /* Üst menü */
+    .header {
+        height: 80px;
+    }
+
+    .site-logo {
+        width: 55px;
+        height: 55px;
+    }
+}
+
+/* ========================================
+   BLOG BÖLÜMÜ - LACİVERT TASARIM
+======================================== */
+
+.blog-section {
+    background-color: #111f38;
+    color: #ffffff;
+}
+
+/* BÖLÜM BAŞLIĞI */
+
+.blog-section .section-heading h2 {
+    color: #ffffff;
+}
+
+.blog-section .section-heading p {
+    color: #d5dce6;
+}
+
+/* BLOG KARTLARI */
+
+.blog-section .blog-card {
+    background-color: #ffffff;
+    border: 1px solid #c6a15b;
+    border-radius: 6px;
+}
+
+/* KART BAŞLIKLARI */
+
+.blog-section .blog-card h3 {
+    color: #111f38;
+}
+
+/* KART AÇIKLAMALARI */
+
+.blog-section .blog-card p {
+    color: #687080;
+}
+
+/* KART BAĞLANTILARI */
+
+.blog-section .blog-card a {
+    color: #111f38;
+}
+
+.blog-section .blog-card a:hover {
+    color: #c6a15b;
+}
+
+/* TÜM YAZILARI GÖR BUTONU */
+
+.blog-section .second-btn {
+    background-color: transparent;
+    color: #c6a15b;
+    border: 1px solid #c6a15b;
+}
+
+.blog-section .second-btn:hover {
+    background-color: #c6a15b;
+    color: #111f38;
+}
+
+
+/* ========================================
+   İLETİŞİM - OFİS HARİTASI
+======================================== */
+
+.contact-map-box {
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.045);
+    border: 1px solid rgba(255, 255, 255, 0.17);
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-map-box h3 {
+    font-family: Georgia, serif;
+    font-size: 25px;
+    color: #ffffff;
+    margin-bottom: 12px;
+}
+
+.map-address {
+    color: #d7deea;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+.map-container {
+    width: 100%;
+    border: 2px solid #c6a15b;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.map-container iframe {
+    display: block;
+    width: 100%;
+    height: 320px;
+    border: none;
+}
+
+.map-direction-btn {
+    display: inline-block;
+    align-self: flex-start;
+    background: transparent;
+    color: #c6a15b;
+    border: 1px solid #c6a15b;
+    padding: 12px 24px;
+    border-radius: 4px;
+    font-weight: 700;
+    margin-top: 20px;
+    transition: 0.3s;
+}
+
+.map-direction-btn:hover {
+    background: #c6a15b;
+    color: #111f38;
+}
+
+@media (max-width: 600px) {
+    .contact-map-box {
+        padding: 20px;
+    }
+
+    .map-container iframe {
+        height: 260px;
+    }
+
+    .map-direction-btn {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+
+
+
+
+/* ==========================================
+   ASYA HUKUK - MOBİL TASARIM
+========================================== */
+
+/* TÜM EKRANLARDA GÜVENLİ GENİŞLİK */
+
+html {
+    scroll-padding-top: 85px;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+img,
+iframe {
+    max-width: 100%;
+}
+
+.hero-content,
+.about-content,
+.lawyer-content,
+.practice-card,
+.blog-card {
+    min-width: 0;
+}
+
+/* ==========================================
+   TABLET VE TELEFON
+========================================== */
+
+@media (max-width: 900px) {
+
+    /* ÜST MENÜ */
+
+    .header {
+        height: 75px;
+    }
+
+    .header-container {
+        width: 92%;
+    }
+
+    .site-logo {
+        width: 52px;
+        height: 52px;
+        object-fit: contain;
+    }
+
+    .logo-title {
+        font-size: 23px;
+    }
+
+    .logo-subtitle {
+        font-size: 9px;
+        letter-spacing: 1px;
+    }
+
+    .menu-btn {
+        display: block;
+        color: #111f38;
+        font-size: 28px;
+        padding: 5px 10px;
+        cursor: pointer;
+    }
+
+    .navbar {
+        display: none;
+        position: absolute;
+        top: 75px;
+        left: 0;
+        width: 100%;
+        padding: 22px 5%;
+        background: #ffffff;
+        box-shadow: 0 12px 20px rgba(0,0,0,0.12);
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+        max-height: calc(100dvh - 75px);
+        overflow-y: auto;
+    }
+
+    .navbar.active {
+        display: flex;
+    }
+
+    .navbar a {
+        display: block;
+        padding: 13px 8px;
+        font-size: 15px;
+        color: #111f38;
+        border-bottom: 1px solid #eeeeee;
+    }
+
+    /* GENEL BÖLÜMLER */
+
+    section {
+        padding: 65px 0;
+    }
+
+    .container {
+        width: 90%;
+    }
+
+    .section-heading {
+        margin-bottom: 35px;
+    }
+
+    .section-heading h2 {
+        font-size: 34px;
+    }
+
+    /* ANA SAYFA */
+
+    .hero {
+        min-height: 600px;
+        background-color: #0a1426;
+        background-image:
+            linear-gradient(
+                90deg,
+                rgba(10,20,38,0.88),
+                rgba(10,20,38,0.66)
+            ),
+            url("../assets/hukuk-arka-plan.png");
+        background-size: cover;
+        background-position: 65% center;
+    }
+
+    .hero-content {
+        max-width: 100%;
+    }
+
+    .hero h1 {
+        font-size: clamp(37px, 6vw, 55px);
+        line-height: 1.15;
+    }
+
+    .hero-description {
+        font-size: 16px;
+        max-width: 550px;
+    }
+
+    /* HAKKIMIZDA */
+
+    .about-container {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .about-title {
+        font-size: 38px;
+    }
+
+    .about-content p {
+        font-size: 16px;
+    }
+
+    .about-highlight {
+        min-height: 300px;
+        padding: 30px;
+    }
+
+    /* ÇALIŞMA ALANLARI */
+
+    .practice-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 16px;
+    }
+
+    .practice-card {
+        min-height: 220px;
+        padding: 24px;
+    }
+
+    /* AVUKAT TANITIMI */
+
+    .lawyer-container {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .lawyer-image-wrapper {
+        width: 100%;
+        max-width: 420px;
+        margin: 0 auto;
+    }
+
+    .lawyer-content h2 {
+        font-size: 38px;
+    }
+
+    /* BLOG */
+
+    .blog-preview-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 18px;
+    }
+
+    /* İLETİŞİM */
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .contact-info,
+    .contact-map-box {
+        padding: 28px;
+    }
+
+    /* FOOTER */
+
+    .footer-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+}
+
+/* ==========================================
+   TELEFON GÖRÜNÜMÜ
+========================================== */
+
+@media (max-width: 600px) {
+
+    .container {
+        width: 90%;
+    }
+
+    section {
+        padding: 55px 0;
+    }
+
+    /* ÜST MENÜ */
+
+    .header {
+        height: 70px;
+    }
+
+    .navbar {
+        top: 70px;
+        max-height: calc(100dvh - 70px);
+    }
+
+    .site-logo {
+        width: 45px;
+        height: 45px;
+    }
+
+    .logo-title {
+        font-size: 21px;
+    }
+
+    .logo-subtitle {
+        font-size: 8px;
+        letter-spacing: 0.7px;
+    }
+
+    /* ANA SAYFA */
+
+    .hero {
+        min-height: 570px;
+        padding: 65px 0;
+        background-position: 72% center;
+    }
+
+    .hero-label {
+        font-size: 10px;
+        letter-spacing: 1px;
+        gap: 10px;
+        margin-bottom: 25px;
+    }
+
+    .hero-line {
+        width: 28px;
+        flex-shrink: 0;
+    }
+
+    .hero h1 {
+        font-size: clamp(32px, 8vw, 42px);
+        line-height: 1.18;
+        overflow-wrap: break-word;
+        margin-bottom: 25px;
+    }
+
+    .hero h1 span {
+        display: block;
+    }
+
+    .hero-description {
+        font-size: 15px;
+        line-height: 1.8;
+        margin-bottom: 28px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 12px;
+    }
+
+    .hero-buttons .main-btn,
+    .hero-buttons .outline-btn {
+        width: 100%;
+        min-height: 48px;
+        font-size: 14px;
+    }
+
+    /* HAKKIMIZDA */
+
+    .about-title {
+        font-size: clamp(29px, 7vw, 38px);
+    }
+
+    .about-content p {
+        font-size: 15px;
+    }
+
+    .about-highlight {
+        min-height: 280px;
+    }
+
+    .about-logo {
+        width: 130px;
+        height: 130px;
+    }
+
+    .about-highlight h3 {
+        font-size: 23px;
+    }
+
+    /* BAŞLIKLAR */
+
+    .section-heading h2 {
+        font-size: 30px;
+    }
+
+    .section-heading p {
+        font-size: 15px;
+    }
+
+    /* ÇALIŞMA ALANLARI */
+
+    .practice-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .practice-card {
+        min-height: 190px;
+        padding: 23px;
+    }
+
+    .practice-number {
+        margin-bottom: 10px;
+        font-size: 18px;
+    }
+
+    .practice-card h3 {
+        font-size: 21px;
+    }
+
+    .practice-card p {
+        font-size: 14px;
+    }
+
+    /* AVUKAT TANITIMI */
+
+    .lawyer-image-wrapper {
+        max-width: 360px;
+        padding: 12px;
+    }
+
+    .lawyer-image-wrapper .lawyer-image img {
+        width: 100%;
+        height: auto;
+        min-height: 0;
+    }
+
+    .lawyer-content h2 {
+        font-size: clamp(29px, 7vw, 37px);
+    }
+
+    .lawyer-content p {
+        font-size: 15px;
+    }
+
+    /* BLOG */
+
+    .blog-preview-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .blog-card {
+        padding: 25px;
+    }
+
+    .blog-card h3 {
+        font-size: 21px;
+    }
+
+    /* SIKÇA SORULAN SORULAR */
+
+    .faq-item {
+        padding: 18px;
+    }
+
+    .faq-item summary {
+        font-size: 15px;
+    }
+
+    /* İLETİŞİM */
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-info,
+    .contact-map-box {
+        padding: 22px;
+    }
+
+    .contact-info h3,
+    .contact-map-box h3 {
+        font-size: 22px;
+    }
+
+    .contact-item p,
+    .contact-item a,
+    .map-address {
+        font-size: 14px;
+        overflow-wrap: anywhere;
+    }
+
+    .map-container iframe {
+        height: 250px;
+    }
+
+    /* FOOTER */
+
+    .footer {
+        padding-top: 45px;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        padding-bottom: 35px;
+    }
+
+    .footer-bottom {
+        font-size: 12px;
+        padding: 18px;
+    }
+}
+
+/* ==========================================
+   ÇOK KÜÇÜK TELEFONLAR
+========================================== */
+
+@media (max-width: 360px) {
+
+    .logo-title {
+        font-size: 19px;
+    }
+
+    .logo-subtitle {
+        font-size: 7px;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    .hero-label {
+        font-size: 9px;
+    }
+}
+
+/* ==========================================
+   ASYA HUKUK - MOBİL SON DÜZENLEMELER
+========================================== */
+
+@media (max-width: 600px) {
+
+    /* 1. HAKKIMIZDA ORTALAMA */
+
+    .about-content {
+        text-align: center;
+    }
+
+    .about-content .section-label {
+        display: block;
+        text-align: center;
+    }
+
+    .about-title {
+        align-items: center;
+        text-align: center;
+        font-size: clamp(28px, 7vw, 36px);
+    }
+
+    .about-title span {
+        text-align: center;
+    }
+
+    .about-content p {
+        text-align: center;
+        font-size: 14px;
+        line-height: 1.75;
+    }
+
+    .about-content .second-btn {
+        margin-top: 10px;
+    }
+
+    .about-highlight {
+        margin: 0 auto;
+        width: 100%;
+        max-width: 340px;
+    }
+
+    /* 2. ÇALIŞMA ALANLARI 2 SÜTUN */
+
+    .practice-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+    }
+
+    .practice-card {
+        min-height: 135px;
+        padding: 16px;
+        border-radius: 6px;
+    }
+
+    .practice-number {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    .practice-card h3 {
+        font-size: 16px;
+        line-height: 1.3;
+        margin-bottom: 8px;
+    }
+
+    .practice-card p {
+        display: none;
+    }
+
+    .card-arrow {
+        font-size: 20px;
+        margin-top: auto;
+    }
+
+    /* 3. İLETİŞİM - YAN YANA */
+
+    .contact-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px;
+        align-items: stretch;
+    }
+
+    .contact-info,
+    .contact-map-box {
+        min-width: 0;
+        padding: 14px;
+    }
+
+    .contact-info h3,
+    .contact-map-box h3 {
+        font-size: 16px;
+        line-height: 1.3;
+        margin-bottom: 15px;
+    }
+
+    .contact-item {
+        margin-bottom: 14px;
+    }
+
+    .contact-item h4 {
+        font-size: 10px;
+        letter-spacing: 0.5px;
+    }
+
+    .contact-item p,
+    .contact-item a {
+        font-size: 11px;
+        line-height: 1.6;
+        overflow-wrap: anywhere;
+    }
+
+    .map-address {
+        font-size: 11px;
+        line-height: 1.5;
+        margin-bottom: 12px;
+    }
+
+    .map-container iframe {
+        width: 100%;
+        height: 230px;
+    }
+
+    .map-direction-btn {
+        padding: 10px;
+        font-size: 11px;
+    }
+}
+
+/* ÇOK KÜÇÜK EKRANLAR */
+
+@media (max-width: 360px) {
+
+    .practice-card {
+        padding: 12px;
+    }
+
+    .practice-card h3 {
+        font-size: 14px;
+    }
+
+    .contact-info,
+    .contact-map-box {
+        padding: 10px;
+    }
+
+    .contact-info h3,
+    .contact-map-box h3 {
+        font-size: 14px;
+    }
+
+    .contact-item p,
+    .contact-item a {
+        font-size: 10px;
+    }
+}
+
+/* MOBİLDE FOOTER LOGOSUNU GİZLE */
+
+@media (max-width: 600px) {
+
+    .footer-logo {
+        display: none;
+    }
+
+}
+
+/* MOBİL FOOTER BOŞLUK DÜZENLEMESİ */
+
+@media (max-width: 600px) {
+
+    /* Footer genel yüksekliği */
+    .footer {
+        padding-top: 25px;
+    }
+
+    /* Bölümler arasındaki boşluk */
+    .footer-container {
+        gap: 20px;
+        padding-bottom: 25px;
+    }
+
+    /* Logo gizli */
+    .footer-logo {
+        display: none;
+    }
+
+    /* Başlık ve avukat adı */
+    .footer-brand h3 {
+        font-size: 21px;
+        margin-bottom: 4px;
+        line-height: 1.3;
+    }
+
+    .footer-brand p {
+        font-size: 13px;
+        margin: 0;
+    }
+
+    /* Hızlı bağlantı ve iletişim başlıkları */
+    .footer-links h4,
+    .footer-contact h4 {
+        font-size: 16px;
+        margin-bottom: 4px;
+    }
+
+    /* Bağlantılar arasındaki boşluk */
+    .footer-links,
+    .footer-contact {
+        gap: 6px;
+    }
+
+    /* Bağlantı yazıları */
+    .footer-links a,
+    .footer-contact a,
+    .footer-contact p {
+        font-size: 13px;
+        line-height: 1.5;
+    }
+
+    /* Telif hakkı alanı */
+    .footer-bottom {
+        padding: 14px 10px;
+        font-size: 11px;
+    }
+}
+
+/* ========================================
+   MOBİL FOOTER - YAN YANA DÜZEN
+======================================== */
+
+@media (max-width: 600px) {
+
+    .footer {
+        padding-top: 25px;
+    }
+
+    .footer-container {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 20px 15px;
+        padding-bottom: 25px;
+    }
+
+    /* ASYA başlığı üstte tam genişlik */
+    .footer-brand {
+        grid-column: 1 / -1;
+    }
+
+    .footer-logo {
+        display: none;
+    }
+
+    .footer-brand h3 {
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+
+    .footer-brand p {
+        font-size: 13px;
+    }
+
+    /* İki bölüm yan yana */
+    .footer-links,
+    .footer-contact {
+        min-width: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .footer-links h4,
+    .footer-contact h4 {
+        font-size: 15px;
+        margin-bottom: 5px;
+    }
+
+    .footer-links a,
+    .footer-contact a,
+    .footer-contact p {
+        font-size: 12px;
+        line-height: 1.5;
+        overflow-wrap: anywhere;
+    }
+
+    .footer-bottom {
+        padding: 14px 10px;
+        font-size: 11px;
+    }
+}
+
