@@ -1,0 +1,164 @@
+
+/* ========================================
+   ASYA HUKUK - ÇALIŞMA ALANLARI
+======================================== */
+
+/* ÜST BAŞLIK */
+
+.service-hero {
+    background: #111f38;
+    color: #ffffff;
+    text-align: center;
+    padding: 75px 0;
+}
+
+.service-hero h1 {
+    font-family: Georgia, serif;
+    font-size: clamp(36px, 4.5vw, 54px);
+    line-height: 1.25;
+    margin-bottom: 20px;
+}
+
+.service-hero-line {
+    width: 75px;
+    height: 3px;
+    background: #c6a15b;
+    margin: 0 auto 22px;
+}
+
+.service-hero p {
+    color: #d5dce6;
+    font-size: 16px;
+}
+
+/* İÇERİK */
+
+.service-page-section {
+    background: #f5f2ec;
+    padding: 70px 0;
+}
+
+.service-page-heading {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.service-page-heading h2 {
+    font-family: Georgia, serif;
+    color: #111f38;
+    font-size: 36px;
+}
+
+/* HİZMET KARTLARI */
+
+.service-page-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+}
+
+.service-page-card {
+    background: #ffffff;
+    border: 1px solid #e8e4dc;
+    border-top: 3px solid #c6a15b;
+    padding: 32px;
+    min-width: 0;
+    transition: 0.3s ease;
+}
+
+.service-page-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 25px rgba(17,31,56,0.08);
+}
+
+.service-card-number {
+    display: block;
+    color: #c6a15b;
+    font-size: 17px;
+    margin-bottom: 15px;
+}
+
+.service-page-card h3 {
+    font-family: Georgia, serif;
+    font-size: 23px;
+    line-height: 1.35;
+    color: #111f38;
+    margin-bottom: 16px;
+}
+
+.service-page-card p {
+    font-family: Arial, sans-serif;
+    color: #687080;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+/* GERİ DÖN */
+
+.service-page-bottom {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.service-back-btn {
+    display: inline-block;
+    padding: 13px 25px;
+    border: 1px solid #c6a15b;
+    color: #111f38;
+    font-size: 14px;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+.service-back-btn:hover {
+    background: #111f38;
+    border-color: #111f38;
+    color: #ffffff;
+}
+
+/* MOBİL */
+
+@media (max-width: 600px) {
+
+    .service-hero {
+        padding: 55px 0;
+    }
+
+    .service-hero h1 {
+        font-size: 35px;
+    }
+
+    .service-hero p {
+        font-size: 14px;
+    }
+
+    .service-page-section {
+        padding: 45px 0;
+    }
+
+    .service-page-heading h2 {
+        font-size: 29px;
+    }
+
+    .service-page-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .service-page-card {
+        padding: 24px;
+    }
+
+    .service-page-card h3 {
+        font-size: 21px;
+    }
+
+    .service-page-card p {
+        font-size: 14px;
+    }
+
+    .service-back-btn {
+        width: 100%;
+        text-align: center;
+    }
+}
