@@ -1,5 +1,5 @@
 
-/* ASYA HUKUK - BLOG DETAY SAYFASI */
+/* ASYA HUKUK - TEK TİP BLOG YAZILARI */
 
 const params = new URLSearchParams(window.location.search);
 const blogId = params.get("id");
@@ -12,6 +12,9 @@ const secilenYazi =
         ? bloklar.find(yazi => yazi.id === blogId)
         : null;
 
+// Önce eski içerikleri temizle
+icerikAlani.replaceChildren();
+
 if (secilenYazi) {
 
     document.title =
@@ -19,7 +22,7 @@ if (secilenYazi) {
 
     baslikAlani.textContent = secilenYazi.title;
 
-    // Tüm içerikleri aynı paragraf biçiminde göster
+    // Yazıyı paragraflara ayır
     const paragraflar = secilenYazi.content
         .trim()
         .split(/\n\s*\n/);
@@ -28,10 +31,13 @@ if (secilenYazi) {
 
         const metin = paragraf.trim();
 
-        if (!metin) return;
+        if (metin === "") return;
 
+        // Her metin normal paragraf olacak
         const p = document.createElement("p");
+
         p.textContent = metin;
+        p.className = "blog-normal-text";
 
         icerikAlani.appendChild(p);
     });
@@ -40,8 +46,9 @@ if (secilenYazi) {
 
     baslikAlani.textContent = "Yazı Bulunamadı";
 
-    const mesaj = document.createElement("p");
-    mesaj.textContent = "Aradığınız blog yazısı bulunamadı.";
+    const p = document.createElement("p");
+    p.className = "blog-normal-text";
+    p.textContent = "Aradığınız blog yazısı bulunamadı.";
 
-    icerikAlani.appendChild(mesaj);
+    icerikAlani.appendChild(p);
 }
