@@ -1301,6 +1301,205 @@ summary:focus-visible {
 }
 
 
+/* ========================================
+   HAKKIMIZDA SAYFASI
+======================================== */
+
+.about-page-hero {
+    background: #111f38;
+    color: white;
+    text-align: center;
+    padding: 95px 0;
+}
+
+.about-page-hero h1 {
+    font-family: Georgia, serif;
+    font-size: clamp(40px, 5vw, 62px);
+    margin-bottom: 20px;
+}
+
+.about-page-hero p {
+    color: #d5dce6;
+    font-size: 17px;
+}
+
+.about-page-line {
+    width: 75px;
+    height: 3px;
+    background: #c6a15b;
+    margin: 0 auto 22px;
+}
+
+/* BÜRO TANITIMI */
+
+.about-page-intro {
+    background: #ffffff;
+}
+
+.about-page-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    align-items: center;
+    gap: 70px;
+}
+
+.about-page-text h2 {
+    font-family: Georgia, serif;
+    color: #111f38;
+    font-size: clamp(32px, 3.5vw, 46px);
+    margin-bottom: 25px;
+}
+
+.about-page-text h2 span {
+    display: block;
+}
+
+.about-page-text p {
+    color: #687080;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.about-page-logo-box {
+    min-height: 370px;
+    background: #f5f2ec;
+    border: 1px solid #e8e4dc;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.about-page-logo-box img {
+    width: 170px;
+    height: 170px;
+    object-fit: contain;
+    margin-bottom: 20px;
+}
+
+.about-page-logo-box h3 {
+    font-family: Georgia, serif;
+    color: #111f38;
+    font-size: 27px;
+}
+
+.about-page-logo-box p {
+    color: #c6a15b;
+    letter-spacing: 2px;
+}
+
+/* TEMEL İLKELER */
+
+.values-section {
+    background: #111f38;
+    color: #ffffff;
+}
+
+.values-section .section-heading h2 {
+    color: #ffffff;
+}
+
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 25px;
+}
+
+.value-card {
+    border: 1px solid rgba(255,255,255,0.18);
+    padding: 35px;
+    background: rgba(255,255,255,0.05);
+}
+
+.value-card span {
+    color: #c6a15b;
+    font-size: 20px;
+}
+
+.value-card h3 {
+    font-family: Georgia, serif;
+    font-size: 25px;
+    margin: 18px 0;
+}
+
+.value-card p {
+    color: #d5dce6;
+    font-size: 15px;
+}
+
+/* ALT İLETİŞİM */
+
+.about-page-contact {
+    background: #f5f2ec;
+    text-align: center;
+}
+
+.about-page-contact h2 {
+    color: #111f38;
+    margin-bottom: 20px;
+}
+
+.about-page-contact p {
+    color: #687080;
+    margin-bottom: 25px;
+}
+
+/* TABLET */
+
+@media (max-width: 900px) {
+
+    .about-page-grid {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .values-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* TELEFON */
+
+@media (max-width: 600px) {
+
+    .about-page-hero {
+        padding: 65px 0;
+    }
+
+    .about-page-hero h1 {
+        font-size: 40px;
+    }
+
+    .about-page-text {
+        text-align: center;
+    }
+
+    .about-page-text h2 {
+        font-size: 33px;
+    }
+
+    .about-page-logo-box {
+        min-height: 290px;
+        padding: 25px;
+    }
+
+    .about-page-logo-box img {
+        width: 130px;
+        height: 130px;
+    }
+
+    .value-card {
+        padding: 25px;
+        text-align: center;
+    }
+
+    .about-page-contact h2 {
+        font-size: 30px;
+    }
+}
+
 
 
 
